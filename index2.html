@@ -9,11 +9,11 @@
         <meta name="keywords" content="3d, 3dtransform, hover, effect, thumbnail, overlay, curved, folded" />
         <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style_common.css" />
-        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <link rel="stylesheet" type="text/css" href="demo.css" />
+        <link rel="stylesheet" type="text/css" href="style_common.css" />
+        <link rel="stylesheet" type="text/css" href="style2.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
-		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+		<script type="text/javascript" src="modernizr.custom.69142.js"></script> 
     </head>
     <body>
         <div class="container">
@@ -72,11 +72,11 @@
 			
 			Modernizr.load({
 				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
-				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','jquery.hoverfold.js'],
 				nope: 'css/fallback.css',
 				callback : function( url, result, key ) {
 						
-					if( url === 'js/jquery.hoverfold.js' ) {
+					if( url === 'jquery.hoverfold.js' ) {
 						$( '#grid' ).hoverfold();
 					}
 
